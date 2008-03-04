@@ -23,9 +23,9 @@
 Bobadela, Portugal}
 \ecvtelephone[(+351) 935613910]{(+351) 217815980}
 \ecvgender{Male}
-\ecvpicture[height=3cm]{fotoJoao.jpg}
-\ecvbeforepicture{\ecvspace{-2.5cm}\centering}
-\ecvafterpicture{\ecvspace{-1.5cm}}
+%\ecvpicture[height=3cm]{fotoJoao.jpg}
+%\ecvbeforepicture{\ecvspace{-2.5cm}\centering}
+%\ecvafterpicture{\ecvspace{-1.5cm}}
 %Fim variáveis pessoais
 
 \begin{document}
@@ -33,11 +33,16 @@ Bobadela, Portugal}
 \begin{europecv}
 
     \ecvpersonalinfo
+
     \label{empregoPretendido}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %Emprego Pretendido
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %    \ecvitem{\large\textbf{Desired employment/ Occupational~field}}{\large\textbf{(Remove if not relevant)}}
+    \newline
+    \ecvitem{
+            \large\textbf{Desired employment}
+        }
+        {\large\textbf{\newline Software Engineer}}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -46,7 +51,7 @@ Bobadela, Portugal}
     %Experiencia Profissional
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \ecvsection{Work experience}
-    \ecvitem{Dates}{\textbf{September 2007 to Present}}
+    \ecvitem{Dates}{\textbf{September 2007 to February 2008}}
     \ecvitem{Occupation or position held}{
         Junior Consultant at AGAP2.
     }
@@ -54,11 +59,11 @@ Bobadela, Portugal}
         Consultant at Portugal Telecom - Sistemas de Informação (PT-SI) in a integration project involving electronic invoices.
             The main technologies in which I worked were:
      \begin{itemize}
-       \item Biztalk 2006
-       \item SQL Server
+       \item Microsoft Biztalk Server 2006
+       \item Microsoft SQL Server
        \item OASIS Universal Business Language (UBL)
-       \item Xml Digital Signatures and S/MIME
-       \item Public Key Certificates X.509
+       \item Xml Digital Signatures, S/MIME, Public Key Certificates (X.509)
+       \item NAnt and NHibernate
      \end{itemize}
     \vspace{-0.3cm}
     }
@@ -107,6 +112,13 @@ Bobadela, Portugal}
     %Formaçao academica e profissional
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \ecvsection{Education and training}
+
+    \ecvitem{Current Ocupation}{\textbf{Since March 2008}}
+    \ecvitem[15pt]{}
+    {
+        Frequenting a PhD course in Information Systems and Computer Engineering at Instituto Superior Técnico.
+    }
+
     \ecvitem{Dates}{\textbf{September 2005 to November 2007}}
     \ecvitem{Title of qualification awarded}
     {
@@ -191,6 +203,7 @@ Bobadela, Portugal}
     \ecvitem[10pt]{Level in national or international}{138.79 of 200 values}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
 \ecvsection{Personal skills \\ and competences}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %Aptidões e competências
