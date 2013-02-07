@@ -310,7 +310,7 @@
 
 % Right Footnote to be shown on every page
 \newcommand\ecvfootnote[1]{\def\ecv@rfoot{#1}}
-\ecvfootnote{}
+\ecvfootnote{\hfill February, 7th 2013}
 
 \AtBeginDocument{%
 % Ensure that \ecv@leftcolwidth and \ecv@rightcolwidth
@@ -381,8 +381,8 @@
 \ifx\@empty\ecvdrawpicture\else
    &\ecv@beforepic\ecvdrawpicture\ecv@afterpic\tabularnewline
 \fi
-{\large\par\textbf{\ecv@infosectionkey}} & \tabularnewline
-& \tabularnewline
+% {\large\par\textbf{\ecv@infosectionkey}} & \tabularnewline
+% & \tabularnewline
 \ecv@namekey & \large\textbf{\ecv@name}\tabularnewline[5pt]
 \ifx\@empty\ecv@address\else
 \ecv@addresskey     &\ecv@address   \tabularnewline[5pt]
