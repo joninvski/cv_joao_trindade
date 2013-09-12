@@ -3,16 +3,22 @@
 %\usepackage{graphicx}
 \usepackage[pdftex]{graphicx}
 %\usepackage[portuguese]{babel}
+\usepackage[colorlinks=false]{hyperref}
 
-\pdfinfo{%                           % Info dictionary of PDF output;
-   /Author (Joao Paulo Pinto Trindade)
-   /Creator (TeX)                   % default: "TeX"
-   /Producer (pdfTeX)               % default: "pdfTeX" + pdftex version
-   /Title (Joao Trindade Curriculum Vitae)             %
-   /Subject (Example)               %
-   /Keywords (Curriculum Vitae Joao Trindade europcv cv europass researcher)              %
+\hypersetup{
+    pdftitle={Curriculum Vitae of Joao Trindade},                                            % title
+    pdfauthor={Joao Paulo Pinto Trindade},                                                   % author
+    pdfsubject={Curriculum Vitae Joao Trindade},                                             % subject of the document
+    pdfcreator={Tex},                                                                        % creator of the document
+    pdfproducer={Pdflatex},                                                                  % producer of the document
+    pdfkeywords={Curriculum Vitae} {Joao} {Trindade} {europcv} {cv} {europass} {researcher}, % list of keywords
+    pdfnewwindow=true,                                                                       % links in new window
+    colorlinks=true,                                                                         % false: boxed links; true: colored links
+    linkcolor=black,                                                                         % color of internal links (change box color with linkbordercolor)
+    citecolor=green,                                                                         % color of links to bibliography
+    filecolor=magenta,                                                                       % color of file links
+    urlcolor=blue                                                                            % color of external links
 }
-
 
 % MINHAS VARIÁVEIS PESSOAIS
 \ecvname{Trindade, João Paulo Pinto}
@@ -379,6 +385,16 @@
     \item \textbf{SEI} - An online book seller which acts as a broker for Amazon and Barnes and Noble. Provides a front-end, several webservices, a database. All integration is performed via Biztalk. Code available at: https://github.com/joninvski/Webooks
 \end{itemize}
 }
+
+\ecvsection{Massive open online courses}
+\ecvitem[15pt]{}{%
+\ecvspace{-1.5cm}
+\begin{itemize}
+    \item \textbf{Introduction to Systematic Program Design - Part 1} @ University of British Columbia \newline
+        More info: \url{http://goo.gl/wgRLGA}
+\end{itemize}
+}
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
