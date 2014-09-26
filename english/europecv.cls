@@ -310,7 +310,7 @@
 
 % Right Footnote to be shown on every page
 \newcommand\ecvfootnote[1]{\def\ecv@rfoot{#1}}
-\ecvfootnote{\hfill September, 20\textsuperscript{th} 2014}
+\ecvfootnote{\hfill September, 26\textsuperscript{th} 2014}
 
 \AtBeginDocument{%
 % Ensure that \ecv@leftcolwidth and \ecv@rightcolwidth
