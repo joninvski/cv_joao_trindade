@@ -304,13 +304,13 @@
 
 % Page number
 \def\ecv@lfoot{%
-  \footnotesize\textrm{\ecv@page~-~\ecv@cvofkey}\\
-  \textrm{\ecv@footername}
+  \footnotesize\textrm{\ecv@page}
+  % \textrm{\ecv@footername}
 }
 
 % Right Footnote to be shown on every page
 \newcommand\ecvfootnote[1]{\def\ecv@rfoot{#1}}
-\ecvfootnote{\hfill July, 11\textsuperscript{th} 2015 }
+\ecvfootnote{\hfill Latest version available at: \url{http://joaoptrindade.com/TrindadeJoaoCV.pdf} \hspace{1.8cm} July, 11\textsuperscript{th} 2015 }
 
 \AtBeginDocument{%
 % Ensure that \ecv@leftcolwidth and \ecv@rightcolwidth
@@ -346,6 +346,7 @@
 \newcommand*{\ecvhomepage}[1]{\def\ecv@homepage{#1}}
 \newcommand*{\ecvnationality}[1]{\def\ecv@nationality{#1}}
 \newcommand*{\ecvdateofbirth}[1]{\def\ecv@birth{#1}}
+\newcommand*{\ecvwebpage}[1]{\def\ecv@webpage{#1}}
 \newcommand*{\ecvgender}[1]{\def\ecv@gender{#1}}
 % Personal picture
 \newcommand*{\ecvdrawpicture}{}
@@ -373,6 +374,7 @@
 \ecvemail{}
 \ecvnationality{}
 \ecvdateofbirth{}
+\ecvwebpage{}
 \ecvgender{}
 \ecvpicture{}
 
@@ -403,6 +405,9 @@
 \fi
 \ifx\@empty\ecv@birth\else
 \ecv@birthkey       & \ecv@birth \tabularnewline[5pt]
+\fi
+\ifx\@empty\ecv@webpage\else
+Webpage      & \ecv@webpage \tabularnewline[5pt]
 \fi
 \ifx\@empty\ecv@gender\else
 \ecv@genderkey      & \ecv@gender \tabularnewline[#1]
