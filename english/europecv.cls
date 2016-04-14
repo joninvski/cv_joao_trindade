@@ -310,7 +310,7 @@
 
 % Right Footnote to be shown on every page
 \newcommand\ecvfootnote[1]{\def\ecv@rfoot{#1}}
-\ecvfootnote{\hfill Latest version available at: \url{http://joaoptrindade.com/TrindadeJoaoCV.pdf} \hspace{1.8cm} July, 11\textsuperscript{th} 2015 }
+\ecvfootnote{\hfill Latest version available at: \url{http://joaoptrindade.com/TrindadeJoaoCV.pdf} \hspace{1.8cm} April, 15\textsuperscript{th} 2016 }
 
 \AtBeginDocument{%
 % Ensure that \ecv@leftcolwidth and \ecv@rightcolwidth
@@ -371,12 +371,12 @@
 \ecvaddress{}
 \ecvtelephone{}
 \ecvfax{}
-\ecvemail{}
 \ecvnationality{}
 \ecvdateofbirth{}
 \ecvwebpage{}
 \ecvgender{}
 \ecvpicture{}
+\ecvemail{}
 
 \providecommand{\ecvpersonalinfo}[1][0pt]{%
 & \tabularnewline
@@ -389,25 +389,25 @@
 \ifx\@empty\ecv@address\else
 \ecv@addresskey     &\ecv@address   \tabularnewline[5pt]
 \fi
+\ifx\@empty\ecv@fax\else
+\ecv@faxkey         &\ecv@fax \tabularnewline[5pt]
+\fi
+\ifx\@empty\ecv@nationality\else
+\ecv@nationalitykey & \ecv@nationality \tabularnewline[5pt]
+\fi
+% \ifx\@empty\ecv@birth\else
+% \ecv@birthkey       & \ecv@birth \tabularnewline[5pt]
+% \fi
+\ifx\@empty\ecv@webpage\else
+Webpage      & \ecv@webpage \tabularnewline[5pt]
+\fi
 \ifx\@empty\ecv@telephone\else
 \ecv@telkey         &\ecv@telephone
  \ifx\@empty\ecv@mobile\else\qquad\ecv@mobilekey: \ecv@mobile\fi
 \tabularnewline[5pt]
 \fi
-\ifx\@empty\ecv@fax\else
-\ecv@faxkey         &\ecv@fax \tabularnewline[5pt]
-\fi
 \ifx\@empty\ecv@email\else
 \ecv@emailkey       &\ecv@email \tabularnewline[5pt]
-\fi
-\ifx\@empty\ecv@nationality\else
-\ecv@nationalitykey & \ecv@nationality \tabularnewline[5pt]
-\fi
-\ifx\@empty\ecv@birth\else
-\ecv@birthkey       & \ecv@birth \tabularnewline[5pt]
-\fi
-\ifx\@empty\ecv@webpage\else
-Webpage      & \ecv@webpage \tabularnewline[5pt]
 \fi
 \ifx\@empty\ecv@gender\else
 \ecv@genderkey      & \ecv@gender \tabularnewline[#1]

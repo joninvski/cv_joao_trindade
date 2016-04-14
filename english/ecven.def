@@ -6,11 +6,11 @@
 \def\ecv@infosectionkey{\ecv@utf{Personal information}}
 \def\ecv@namekey{\ecv@utf{Surname / First names}}
 \def\ecv@addresskey{\ecv@utf{Address}}
-\def\ecv@telkey{\ecv@utf{Telephone}}
+\def\ecv@telkey{\ecv@utf{Telephone / Webpage}}
 \def\ecv@mobilekey{\ecv@utf{Mobile}}
 \def\ecv@faxkey{\ecv@utf{Fax(es)}}
 \def\ecv@emailkey{\ecv@utf{Email}}
-\def\ecv@nationalitykey{\ecv@utf{Nationality}}
+\def\ecv@nationalitykey{\ecv@utf{Nationality / Date of birth}}
 \def\ecv@birthkey{\ecv@utf{Date of birth}}
 \def\ecv@genderkey{\ecv@utf{Gender}}
 % Footer
