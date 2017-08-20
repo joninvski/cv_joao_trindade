@@ -1,6 +1,7 @@
 \documentclass[latin1,helvetica,narrow,english,nologo,totpages]{europecv}
 \usepackage[a4paper,top=1.27cm,left=1cm,right=1cm,bottom=2cm]{geometry}
 \usepackage{enumitem}
+\usepackage{tabto}
 %\usepackage{graphicx}
 \usepackage[pdftex]{graphicx}
 %\usepackage[portuguese]{babel}
@@ -24,10 +25,10 @@
 % MINHAS VARIÁVEIS PESSOAIS
 \ecvname{Trindade, João Paulo Pinto}
 \ecvemail{trindade.joao@gmail.com}
-\ecvnationality{Portuguese / May, 2$^{nd}$ 1984}
+\ecvnationality{Portuguese \tabto{5cm} May, 2$^{nd}$ 1984}
 \ecvdateofbirth{}
 % \ecvaddress{Rua Carvalho Serra, N.18 2ºESQ, 2800-044 Almada, Portugal}
-\ecvtelephone{(+351) 935613910  / \url{http://joaoptrindade.com}}
+\ecvtelephone{(+351) 935613910  \tabto{5cm} \url{http://joaoptrindade.com}}
 
 %\ecvpicture[height=3cm]{fotoJoao.jpg}
 %\ecvbeforepicture{\ecvspace{-2.5cm}\centering}
@@ -46,8 +47,8 @@
     %        }
     %        {\large\textbf{\newline Software Engineer}}
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \ecvitem[5pt]{\large\textbf{Desired Position}}{\newline\large Backend/Mobile Developer}
-        \ecvitem[2pt]{Keywords}{REST, Git, Continuous Integration, Unit-Testing, Linux, Open Source}
+        \ecvitem[5pt]{\large\textbf{Desired Position}}{\newline\large Backend / Mobile Developer}
+        \ecvitem[2pt]{Keywords}{Functional Programming, REST, Continuous Integration, Testing, Open Source}
         \ecvitem[2pt]{Programming Languages}{Java, Clojure, Ruby}
 
 %\newpage
@@ -56,33 +57,35 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \ecvsection{Education and training}
 
-    \ecvitem[5pt]{}{\underline{\textbf{March 2008-November 2014}} / Instituto Superior Técnico}
-    \ecvitem[5pt]{Title of qualification}
+    \ecvitem[5pt]{2008 - 2014}{\textbf{PhD} in Computer Engineering at Instituto Superior Técnico}
+    \ecvitem[15pt]{}
     {%
-        \textbf{PhD} in Information Systems and Computer Engineering.
+        Approved with distinction
     }
     % \ecvitem{Main activities}
     % {%
     %      Developed a routing protocol suited for large scale MANETs using bloom filters.
     % }
-    \ecvitem[15pt]{Grade}
-    {%
-        With distinction.
-    }
 
-    \ecvitem[5pt]{}{\underline{\textbf{September 2005 to November 2007}} / Instituto Superior Técnico}
-    \ecvitem[5pt]{Title of qualification}
+    \ecvitem[5pt]{2005 - 2007}{\textbf{MSc} in Computer Engineering at Instituto Superior Técnico}
+    \ecvitem[15pt]{}
     {%
-        \textbf{MSc} degree in Information Systems and Computer Engineering.
+        17 of 20 points
     }
     % \ecvitem{Principal subjects}
     % {%
     %   Main Branch: Enterprise Information Systems.%- Covers the various impacts of Information Systems in a organization.
     %   Secondary Branch: Networks, Applications and Services.% - Covers the planning and development of networks, application and services.
     % }
-    \ecvitem[5pt]{Grade}
+%    \ecvitem[5pt]{grade}
+%    {%
+%        17 of 20 points.
+%    }
+
+    \ecvitem[5pt]{2002 - 2005}{\textbf{BSc} in Computer Engineering at Instituto Superior Técnico}
+    \ecvitem[5pt]{}
     {%
-        17 of 20 points.
+        14 of 20 points
     }
 
     % \ecvitem[5pt]{}{\underline{\textbf{September 2002 to July 2005}}}
@@ -146,18 +149,23 @@
     %Experiencia Profissional
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \ecvsection[5pt]{Work experience}
-    \ecvitem[5pt]{}{\underline{\textbf{July 2015 to present}} / Lisbon, Portugal}
-    \ecvitem[10pt]{Position held}{%
-      Software Developer for the routing team (Twilio, Ruby, RabbitMQ, docker)
+    \ecvitem[5pt]{Since 2015}{\textbf{Team leader} and developer at Talkdesk}
+    \ecvitem{}{%
+        \vspace{-0.6cm}
+        \begin{itemize}[noitemsep,parsep=0pt,partopsep=0pt]
+            \item Ruby
+            \item Twilio / Plivo
+            \item RabbitMQ / MongoDB / Redis / Docker
+        \end{itemize}
+        \vspace{-0.2cm}
     }
 
-    \ecvitem[5pt]{}{\underline{\textbf{September 2014 to July 2015}} / Milan, Italy}
-    \ecvitem{Position held}{%
-        Software Developer implementing a mobile app that calculates the best tariff plan for a user.
-        \begin{itemize}[noitemsep,topsep=5pt,parsep=0pt,partopsep=0pt]
-            \item Android Developer (Gradle/Retrofit/Otto/Robolectric/REST)
-            \item Backend Developer (AWS/Docker/Github/RabbitMQ/Python/Redis/Memcache)
-            \item Hiring and managing a small team (SCRUM/Daily Standups/Recruitment)
+    \ecvitem[5pt]{2014 - 2015}{\textbf{Mobile developer} and Interim CTO at Walletsaver}
+    \ecvitem{}{%
+        \vspace{-0.6cm}
+        \begin{itemize}[noitemsep,parsep=0pt,partopsep=0pt]
+            \item Gradle / Retrofit / Otto / REST
+            \item AWS / Memcache / Redis / Docker
         \end{itemize}
         \vspace{-0.2cm}
     }
@@ -165,30 +173,27 @@
     %     http://walletsaver.com
     % }
 
-    \ecvitem[5pt]{}{\underline{\textbf{From 2006 to 2014}} / Lisbon, Portugal}
-    \ecvitem[15pt]{Position held}{%
-        Researcher at INESC-ID involved in international research projects
-        \begin{itemize}[noitemsep,topsep=5pt,parsep=0pt,partopsep=0pt]
-            \item Developed kernel modules (C/Embedded Systems/Kernel/Linux)
-            \item System administrator of the research group server (Debian/Sysadmin/Bash/Debian)
+    \ecvitem[5pt]{2006 - 2014}{\textbf{Researcher} and Developer at INESC-ID}
+    \ecvitem[15pt]{}{%
+        \vspace{-0.6cm}
+        \begin{itemize}[noitemsep,parsep=0pt,partopsep=0pt]
+            \item Participated in multiple international research projects
+            \item Developed linux kernel modules
+            \item System administrator of the research group debian server
         \end{itemize}
         \vspace{-0.2cm}
     }
 
-    \ecvitem[5pt]{}{\underline{\textbf{From 2006 to 2012}} / Lisbon, Portugal}
-    \ecvitem{Position held}{%
-        Teacher in IST university
-      }
-    \ecvitem[15pt]{Main activities and responsibilities}
-    {
-        Lectured the laboratory lessons of the following courses:
-        \begin{itemize}[noitemsep,topsep=5pt,parsep=0pt,partopsep=0pt]
-            \item Fault-Tolerant Distributed Systems (February 2012 to July 2012),
-            \item Enterprise Systems Integration (February 2012 to July 2012),
-            \item Independent Studies I and III (September 2011 to February 2012),
-            \item Distributed Systems (February 2011 to July 2011),
-            \item Digital Systems (September 2008 to February 2010),
-            \item Computer Architecture (February 2006 to July 2006).
+    \ecvitem[5pt]{2006 - 2012}{\textbf{Lecturer} of laboratories/practical lessons at IST}
+    \ecvitem[15pt]{}{%
+        \vspace{-0.6cm}
+        \begin{itemize}[noitemsep,parsep=0pt,partopsep=0pt]
+            \item Fault-Tolerant Distributed Systems
+            \item Enterprise Systems Integration
+            \item Independent Studies I and III
+            \item Distributed Systems
+            \item Digital Systems
+            \item Computer Architecture
         \end{itemize}
     }
 
@@ -203,20 +208,14 @@
     %     \vspace{-0.4cm}
     % }
 
-    \ecvitem[5pt]{Date/Location}{\underline{\textbf{September 2007 to February 2008}} / Lisbon, Portugal}
-    \ecvitem{Position held}{%
-        Junior Consultant at AGAP2.
+    \ecvitem[5pt]{2007 - 2008 }{\textbf{Junior Developer} at AGAP2}
+    \ecvitem[15pt]{}{%
+        \vspace{-0.6cm}
+            \begin{itemize}[noitemsep,parsep=0pt,partopsep=0pt]
+            \item OASIS Universal Business Language (UBL),
+            \item Xml Digital Signatures / Public Key Certificates (X.509),
+        \end{itemize}
     }
-    % \ecvitem[15pt]{Main activities and responsibilities}{%
-    %     External Consultant at Portugal Telecom - Sistemas de Informação (PT-SI).
-        % Worked with:
-     % \begin{itemize}
-     %   \item Microsoft Biztalk Server 2006,
-     %   \item Microsoft SQL Server,
-     %   \item OASIS Universal Business Language (UBL),
-     %   \item Xml Digital Signatures, S/MIME, Public Key Certificates (X.509),
-     %   \item NAnt and NHibernate.
-     % \end{itemize}
     % \vspace{-0.4cm}
     % }
 
@@ -240,171 +239,120 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \newpage
-\ecvsection{Projects}
-\ecvitem[15pt]{}{%
-\ecvspace{-1.4cm}
-For an up-to-date complete list visit: \url{https://github.com/joninvski}
-\begin{itemize}[topsep=8pt,parsep=3pt,partopsep=0pt]
-    % \item \textbf{ClojureNqueens} - Functional implementation in clojure for solving the NQueens problem. Uses the continuous integration service provided by Travis-ci.org. Code available at: \url{https://github.com/joninvski/clojure_nqueens}
-    % \item \textbf{SEI} - An online book seller which acts as a broker for Amazon and Barnes and Noble. Provides a front-end, several webservices, a database. All integration is performed via Biztalk. Code available at: \url{https://github.com/joninvski/webooks}
-  \item \textbf{Even Better Password Maker} - Android app that creates unique, secure passwords\@. Published in Play store: \url{http://goo.gl/kj4g4d}. Code available at: \url{https://github.com/joninvski/even_better_password_maker}
-  \item \textbf{Energy Times} - Android app to check the electric price plan according to the current time. Published in Play store: \url{http://goo.gl/ew2UFX}. Code available at: \url{https://github.com/joninvski/EnergyTimes}
-  \item \textbf{MiaVita} - Implemented a kernel module for embedded systems operating on a wireless \textit{ad hoc} sensor network. Code available at: \url{https://github.com/cnm/mia\_vita/tree/master/interruption}
-\end{itemize}
+\ecvsection{Open Source Projects}
+\ecvitem[5pt]{Even Better Password Maker}{%
+    Android app that creates unique, secure passwords\@. \newline
+%   Play store: \url{http://goo.gl/kj4g4d}.\newline
+    \url{https://github.com/joninvski/even_better_password_maker}
+}
 
-Open source contributions:
-  \begin{itemize}[label={},noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
-    \item Android: JakeWharton/hugo, JakeWharton/sdk-manager-plugin, amplitude/Amplitude-Android, MichaelEvans/ChromaHashView
-    \item Linux: Docker/machine, Darktable-org/darktable
-  \end{itemize}
-    % \item \textbf{MMG} - Online text-based role-playing game implemented in C\# where the game state is distributed among several servers. Proof of concept for the Middleware for Distributed Internet Applications course. Code available at: \url{https://github.com/joninvski/padi}
-\ecvspace{-1.5cm}
+\ecvitem[5pt]{Energy Times}{%
+    Android app to check the electric price plan according to the current time.\newline
+%   Play store: \url{http://goo.gl/ew2UFX}.\newline
+    \url{https://github.com/joninvski/EnergyTimes}
+}
+
+\ecvitem[15pt]{MiaVita}{%
+Implemented a kernel module for embedded systems operating on a wireless \textit{ad hoc} sensor network. \newline
+\url{https://github.com/cnm/mia\_vita/tree/master/interruption}
+}
+
+\ecvitem[5pt]{Other projecs}{%
+    Pull requests contributions:%
+        \begin{itemize}[noitemsep,parsep=0pt,partopsep=0pt]
+            \item JakeWharton/hugo
+            \item JakeWharton/sdk-manager-plugin
+            \item amplitude/Amplitude-Android
+            \item MichaelEvans/ChromaHashView
+            \item Docker/machine
+            \item Darktable-org/darktable
+        \end{itemize}
+}
+
+\ecvitem[5pt]{}{%
+    For an up-to-date complete list visit: \url{https://github.com/joninvski}
 }
 
 
+
 %\newpage
-\ecvsection{Personal skills / competences}
+\ecvsection{Aditional Information}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %Aptidões e competências
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %Línguas
-    \ecvmothertongue[5pt]{Portuguese}
-    \ecvlanguageheader{(*)}
-    \ecvlanguage{English}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
-    % \ecvlastlanguage{Spanish}{\ecvBOne}{\ecvBOne}{\ecvATwo}{\ecvATwo}{\ecvATwo}
-    % \ecvlastlanguage{Japanese}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}
-    \ecvlanguagefooter[10pt]{(*)}
+    %\ecvmothertongue[5pt]{Portuguese}
+    %\ecvlanguageheader{(*)}
+    %\ecvlanguage{English}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
+    %% \ecvlastlanguage{Spanish}{\ecvBOne}{\ecvBOne}{\ecvATwo}{\ecvATwo}{\ecvATwo}
+    %% \ecvlastlanguage{Japanese}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}
+    %\ecvlanguagefooter[10pt]{(*)}
 
     %Aptidoes e competencias
-    \ecvitem[10pt]{\large Social skills and competences}
-    {%
-    Phd Program in Information Systems and Computer Engineering students representative (2012/2013)\newline
-    4$^{th}$ and 5$^{th}$ year class president of LEIC-Taguspark IST(2006/2007) \newline
-    3$^{rd}$ year class vice-president LEIC-Taguspark IST (2004/2005) \newline
-%    Branch SIE class president Delegado do Ramo Sistema informação LEIC-Taguspark do IST (2005/2006) \newline
-%    Sub-Delegado do curso LEIC-TagusPark IST (2005/2006)
-    % Students Representative of LEIC-Taguspark IST and SIE Branch (2005/2007) \newline
-    % Member of the pedagogical council of IST (2006/2007) \newline
-    % Monitoring high school children in a 24 hour management game (May 2008)\newline
+    \ecvitem[10pt]{Languages}{Proficient in English and Portuguese}
+    \ecvitem[15pt]{Certifications}{%
+        Linux Professional Institute Exam 101 (LPI)\newline
+        Project management certified level D (APOGEP/IPMA)
+    }
+    \ecvitem[15pt]{Open online courses}{%
+    Finished with certificate of accomplishment the following MOOCs:
+        \begin{itemize}[noitemsep,parsep=0pt,partopsep=0pt]
+        \item {Programming Mobile Applications for Android} @ University of Maryland
+            %More info: \url{http://goo.gl/Fbaenk}\newline
+        \item {Programming Mobile Services for Android} @ Vanderbilt University
+            %More info: \url{http://goo.gl/78ObK5}\newline
+        \item {Programming Cloud Services for Android} @ Vanderbilt University
+            %More info: \url{http://goo.gl/9Qnfmk}\newline
+        \item {Introduction to Systematic Program Design - Part 1} @ University of British Columbia
+            %More info: \url{http://goo.gl/rjVzjv}\newline
+        \item {Startup Engineering} @ Stanford University
+            %More info: \url{http://goo.gl/fqrdhq} and \url{http://goo.gl/tkSdJ7}\newline
+        \item {Web Intelligence and Big Data} @ Indian Institute of Technology Delhi
+            %More info: \url{http://goo.gl/PmloeR} and \url{http://goo.gl/PVEBnt}\newline
+        \item {Functional Programming Principles in Scala} @ École Polytechnique Fédérale de Lausanne
+            %More info: \url{http://goo.gl/B5RZG8} and \url{http://goo.gl/leK6Fx}\newline
+        \end{itemize}
     }
 
-    \ecvitem[10pt]{\large Organisational skills \\ and competences}
-    {%
-    Organizing member in the national conference CRC 2009 (October 2009)\newline
-    Skills in project management (APOGEP/IPMA level D certified) (October 2007)\newline
-    Organizing member in the international conference ICOIN 2007 (January 2007)\newline
-    Founding Member of the Students Informatics Group NEIIST (2003) \newline
-    % Community Section Director of NEIIST (2003)\newline
-    Organizing member of the 2$^{nd}$ Cycle of NEIIST lectures (2003)
+    \ecvitem[15pt]{Awards}{%
+        Winner of the Lean Startup Machine Lisbon 2014 \newline
+        Winner of the TadHack 2015 Hackaton
     }
 
-    % \ecvitem[10pt]{\large Artistic skills and competences}
-    % {%
-    % Mini Digital Photography Course (From 6 to 27 of November 2006)\newline
-    % Amateur Photographer - http://www.flickr.com/photos/joao\_trindade/ (Since 2006)
-    % }
-
-    \ecvitem[10pt]{\large Other skills and competences}
-    {%
-    Open Water Diver Course, PADI (2003) \newline
-    Basic Life Support course (5 May 2007) \newline
-    Japanese language course (19 March to 2 June 2008)
+    \ecvitem[15pt]{Other}{%
+        Students class president at the University \newline
+        Founding Member of the Students Informatics Group\newline
+        AndroidLx meetup organizer\newline
+        Technical reviewer of the book \textit{Learning Android Application Testing} \newline
+        Author of 17 technical, peer-reviewed publications
     }
 
-    \ecvitem[10pt]{\large Driving licence}
-    {%
-    Portuguese Drivers licence, category B vehicle.
-    }
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %Informação Adicional
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \ecvsection{Additional Information}
+%\newpage
+%\ecvsection{Publications}
+%\ecvitem[15pt]{}{%
+%\textbf{Routing on large scale mobile ad hoc networks using bloom filters }, Jo\~{a}o Trindade, Teresa Vaz\~ao, Ad Hoc Networks --- Elsevier Journals  (2014)\newline
+%\textbf{A wireless sensor network for monitoring volcano-seismic signals}, Ricardo Lopes Pereira, Jo\~{a}o Trindade, \textit{et al}, Natural Hazards and Earth System Sciences, European Geosciences Union Article (2014)\newline
+%\textbf{Scalability of bloom filter based routing for large scale mobile networks}, Jo\~{a}o Trindade, Ricardo Lopes Pereira, Teresa Vaz\~ao, 7th IFIP Wireless and Mobile Networking (2014)\newline
+%\textbf{"Last mile" challenges to in situ volcanic data transmission}, Fonseca \emph{et al}, Natural Hazards and Earth System Sciences, European Geosciences Union Article (2013)\newline
+%\textbf{Light-Weight Time Synchronization For Wireless Sensor Networks}, Frederico Gonçalves, Lalith Suresh Puthalath, Ricardo Lopes Pereira, João Trindade, Teresa Vazão, CFIC (2013)\newline
+%\textbf{A Performance Evaluation of HRAN: A Hybrid Routing Protocol Using Bloom Filters for Wireless Mobile Ad Hoc Networks}, João Trindade, Teresa Vazão, NCA (2012)\newline
+%\textbf{Handbook for Volcanic Risk Management - Prevention, Crisis Management, Resikiente}, Bagni Marco, \textit{et al}, Orleans (2012)\newline
+%\textbf{Protocolo de encaminhamento para redes móveis usando estruturas binárias eficientes}, João Trindade, Teresa Vazão, CRC (2012)\newline
+%\textbf{CLOWDE - Cross-Layer One-Way Delay Estimation}, Frederico Gonçalves, Lalith Suresh Puthalath, Ricardo Lopes Pereira, João Trindade, Teresa Vazão, IAVRM (2012)\newline
+%\textbf{The role of telecommunications in volcanic risk mitigation - lessons from the MIAVITA Project}, João Trindade, Teresa Maria Sa Ferreira Vazao Vasques, Joao Duarte Fonseca, 2012, International Conference on Integrated Approaches for Volcanic Risk Management, IAVRM (2012)\newline
+%\textbf{Communication and volcanic Disaster Management: a Case Study of Mount Cameroon}, Emmanuel Kouokam, Njojo Jesse Konang, Robert Mbe Akoko, Mananga Guillaume Sosthene, João Trindade, Pierre Thierry, IAVRM (2012)\newline
+%\textbf{MIAVITA - Wireless Sensor Network}, Ricardo Lopes Pereira \textit{et al}, IAVRM (2012)\newline
+%\textbf{Recomendations for the use of Public Communication Networks during Volcanic Events}, João Trindade, Teresa Vazão, Ricardo Lopes Pereira, IAVRM (2012)\newline
+%\textbf{HRAN - a scalable routing protocol for multihop wireless networks using bloom filters}, João Trindade, Teresa Vazão, WWIC (2011)\newline
+%\textbf{HRAN: Heat Routing Protocol for Ad-Hoc Networks}, João Trindade, Teresa Vazão, MEDHOC (2011)\newline
+%\textbf{TECLAS - an Extremely Configurable Log Analyser System}, João Trindade, Teresa Vazão, ICOIN (2010) \newline
+%\textbf{A Classification Framework for Network and Service Management Models}, João Trindade, Teresa Vazão, Conftele (2009)\newline
+%\textbf{Fault diagnostics and reporting in mobile services}, João Trindade, DEI (2007)
+%
+%\ecvspace{-1.0cm}
+%}
 
-    \ecvitem[15pt]{Other certifications}{%
-        Linux Professional Institute (LPI) Exam 101. (24 May 2008)\newline
-        Winner of the Lean Startup Machine Lisbon 2014 (July 2014)\newline
-        Winner of the TadHack Hackaton (June 2015)
-    }
-
-%    \ecvitem[15pt]{Attended Lectures}{
-%    ``International Conference on Information Networking - ICOIN 2007'', organized by INESC-ID. (22 to 25 January 2007)\newline
-%    ``Directions 2006 - Increasing Competitiveness through IT Innovation and Business Transformation'',  organized by IDC Portugal. (10 and 11 October 2006)\newline
-%    ``Laying the Foundation for SOA'', organized by IBM. (19 September 2006) \newline
-%    ``Mobilidade: Da Visão do Presente à visão do Futuro'', organized by IST-TagusPark. (21 and 22 March 2005) \newline
-%Security Workshop: ``Writing Secure Code'', organized by Microsoft (14 April 2004)
-
-%    }
-
-    \ecvitem[15pt]{Activities}{%
-
-        Organizer of the AndroidLx meetup in Lisbon Portugal (2016)
-
-        Technical reviewer of the book \textit{Learning Android Application Testing} by Packt Publishing (2015)
-
-        Intern at the communication networks group of INESC-ID (September 2006 to November 2007)
-
-        Development of a project with the Information Center of IST (CIIST) to create an application to monitor the various network equipments present at IST-Taguspark (July 2006)
-
-        Speaker in the 2$^{nd}$ and 3$^{rd}$ Cycle of NEIIST Lectures about the VIM editor (2003 and 2004)
-
-    }
-
-%    \ecvitem{Personal Interests}{
-%        Bicycle rides in the country. Underwater photography. Jazz and bossanova music enthusiast. \newline
-%        Recently I started playing tennis and I like to travel and meet new people.
-%    }
-
-
-\newpage
-\ecvsection{Publications}
-\ecvitem[15pt]{}{%
-\ecvspace{-1.7cm}
-\textbf{Routing on large scale mobile ad hoc networks using bloom filters }, Jo\~{a}o Trindade, Teresa Vaz\~ao, Ad Hoc Networks --- Elsevier Journals  (2014)\newline
-\textbf{A wireless sensor network for monitoring volcano-seismic signals}, Ricardo Lopes Pereira, Jo\~{a}o Trindade, \textit{et al}, Natural Hazards and Earth System Sciences, European Geosciences Union Article (2014)\newline
-\textbf{Scalability of bloom filter based routing for large scale mobile networks}, Jo\~{a}o Trindade, Ricardo Lopes Pereira, Teresa Vaz\~ao, 7th IFIP Wireless and Mobile Networking (2014)\newline
-\textbf{"Last mile" challenges to in situ volcanic data transmission}, Fonseca \emph{et al}, Natural Hazards and Earth System Sciences, European Geosciences Union Article (2013)\newline
-\textbf{Light-Weight Time Synchronization For Wireless Sensor Networks}, Frederico Gonçalves, Lalith Suresh Puthalath, Ricardo Lopes Pereira, João Trindade, Teresa Vazão, CFIC (2013)\newline
-\textbf{A Performance Evaluation of HRAN: A Hybrid Routing Protocol Using Bloom Filters for Wireless Mobile Ad Hoc Networks}, João Trindade, Teresa Vazão, NCA (2012)\newline
-\textbf{Handbook for Volcanic Risk Management - Prevention, Crisis Management, Resikiente}, Bagni Marco, \textit{et al}, Orleans (2012)\newline
-\textbf{Protocolo de encaminhamento para redes móveis usando estruturas binárias eficientes}, João Trindade, Teresa Vazão, CRC (2012)\newline
-\textbf{CLOWDE - Cross-Layer One-Way Delay Estimation}, Frederico Gonçalves, Lalith Suresh Puthalath, Ricardo Lopes Pereira, João Trindade, Teresa Vazão, IAVRM (2012)\newline
-\textbf{The role of telecommunications in volcanic risk mitigation - lessons from the MIAVITA Project}, João Trindade, Teresa Maria Sa Ferreira Vazao Vasques, Joao Duarte Fonseca, 2012, International Conference on Integrated Approaches for Volcanic Risk Management, IAVRM (2012)\newline
-\textbf{Communication and volcanic Disaster Management: a Case Study of Mount Cameroon}, Emmanuel Kouokam, Njojo Jesse Konang, Robert Mbe Akoko, Mananga Guillaume Sosthene, João Trindade, Pierre Thierry, IAVRM (2012)\newline
-\textbf{MIAVITA - Wireless Sensor Network}, Ricardo Lopes Pereira \textit{et al}, IAVRM (2012)\newline
-\textbf{Recomendations for the use of Public Communication Networks during Volcanic Events}, João Trindade, Teresa Vazão, Ricardo Lopes Pereira, IAVRM (2012)\newline
-\textbf{HRAN - a scalable routing protocol for multihop wireless networks using bloom filters}, João Trindade, Teresa Vazão, WWIC (2011)\newline
-\textbf{HRAN: Heat Routing Protocol for Ad-Hoc Networks}, João Trindade, Teresa Vazão, MEDHOC (2011)\newline
-\textbf{TECLAS - an Extremely Configurable Log Analyser System}, João Trindade, Teresa Vazão, ICOIN (2010) \newline
-\textbf{A Classification Framework for Network and Service Management Models}, João Trindade, Teresa Vazão, Conftele (2009)\newline
-\textbf{Fault diagnostics and reporting in mobile services}, João Trindade, DEI (2007)
-
-\ecvspace{-1.0cm}
-}
-
-
-\ecvsection{Massive open online courses}
-\ecvitem[15pt]{}{%
-\ecvspace{-1.4cm}
-Finished with certificate of accomplishment the following MOOCs:
-\begin{itemize}[noitemsep,topsep=8pt,parsep=8pt,partopsep=0pt]
-    \item \textbf{Programming Mobile Applications for Android Handheld Systems} @ University of Maryland\newline
-        More info: \url{http://goo.gl/Fbaenk}
-    \item \textbf{Pattern-Oriented Software Architectures: Programming Mobile Services for Android Handheld Systems} @ Vanderbilt University\newline
-        More info: \url{http://goo.gl/78ObK5}
-    \item \textbf{Programming Cloud Services for Android Handheld Systems} @ Vanderbilt University\newline
-        More info: \url{http://goo.gl/9Qnfmk}
-    \item \textbf{Introduction to Systematic Program Design - Part 1} @ University of British Columbia \newline
-        More info: \url{http://goo.gl/rjVzjv}
-    \item \textbf{Startup Engineering} @ Stanford University \newline
-        More info: \url{http://goo.gl/fqrdhq} and \url{http://goo.gl/tkSdJ7}
-    \item \textbf{Web Intelligence and Big Data} @ Indian Institute of Technology Delhi\newline
-        More info: \url{http://goo.gl/PmloeR} and \url{http://goo.gl/PVEBnt}
-    \item \textbf{Functional Programming Principles in Scala} @ École Polytechnique Fédérale de Lausanne \newline
-        More info: \url{http://goo.gl/B5RZG8} and \url{http://goo.gl/leK6Fx}
-\end{itemize}
-}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
