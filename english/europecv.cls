@@ -311,7 +311,7 @@
 % Right Footnote to be shown on every page
 \newcommand\ecvfootnote[1]{\def\ecv@rfoot{#1}}
 \ecvfootnote{\hfill Latest version available at: \url{http://joaoptrindade.com/TrindadeJoaoCV.pdf} \hspace{1.8cm}
-November, 5\textsuperscript{th} 2017 }
+March, 14\textsuperscript{th} 2018 }
 
 \AtBeginDocument{%
 % Ensure that \ecv@leftcolwidth and \ecv@rightcolwidth
